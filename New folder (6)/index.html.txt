@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiss Day 💋</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Intro -->
+<section id="intro" class="page active">
+<img src="assets/intro.gif" class="main-gif">
+<h1 class="calligraphy">sending love your way 💌✨</h1>
+</section>
+
+<!-- Game -->
+<section id="game" class="page">
+<h1>💋 Kiss Destiny Game 💋</h1>
+
+<button onclick="generateKiss()">Reveal Your Kiss 💖</button>
+
+<div id="kissResult"></div>
+
+<button onclick="showPage('photo')">Next ➡️</button>
+</section>
+
+<!-- Photo -->
+<section id="photo" class="page">
+<img src="assets/photo.jpg" class="photo">
+<p class="caption">Mein aur mere bacho ka hone waala baap 😝✨</p>
+
+<button onclick="showPage('timeline')">Next ➡️</button>
+</section>
+
+<!-- Timeline -->
+<section id="timeline" class="page">
+
+<h1 class="calligraphy">Our Love Timeline 💗✨</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h2>🌸 Sept 10, 2025</h2>
+<p>First talk in DMs 💬🥺</p>
+</div>
+
+<div class="timeline-item">
+<h2>💞 Sept 18, 2025</h2>
+<p>Situationship era 😋✨</p>
+</div>
+
+<div class="timeline-item">
+<h2>🫶 Feb 6, 2026</h2>
+<p>Official Relationship 💍💗</p>
+</div>
+
+</div>
+
+<p class="timeline-quote">
+From strangers to something so special...  
+Every moment with you feels like my favourite chapter 😌💫
+</p>
+
+<button onclick="showPage('final'); startTyping()">Next ➡️</button>
+
+</section>
+
+<!-- Final -->
+<section id="final" class="page">
+<div class="note calligraphy">
+<p id="loveLetter"></p>
+<img src="assets/final.gif">
+</div>
+</section>
+
+<!-- Floating + Counter + Popup -->
+<div id="floatingContainer"></div>
+<div id="explosionContainer"></div>
+
+<div id="kissCounter">💋 0</div>
+
+<div id="kissPopup" class="popup">
+💋 Surprise Kiss for Ashraf 😌💗
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
